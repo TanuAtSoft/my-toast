@@ -18,7 +18,7 @@ function App() {
     };
 
     if (type === "success") {
-      options.autoClose = 1000; // 10 seconds for success
+      options.autoClose = 2000; // 10 seconds for success
     } else {
       options.autoClose = false; // No autoClose for error and warning
     }
@@ -45,7 +45,7 @@ function App() {
         onClick={() =>
           handleNotifyClick(
             "success",
-            "This is a success toast and will be dismissed after 10 seconds"
+            "This is a success toast and will be dismissed after 2 seconds"
           )
         }
       >
